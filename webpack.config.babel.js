@@ -17,7 +17,7 @@ export default {
   target: 'web',
   output: {
     path: path.join(__dirname, './build/'),
-    filename: 'react-whs.js',
+    filename: 'bundle.js',
     libraryTarget: 'umd',
     library: 'WHSReact'
   },
@@ -35,7 +35,16 @@ export default {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        query: {
+            presets: ['es2015', 'react', 'stage-1'],
+            plugins: [
+                "add-module-exports",
+                "transform-decorators-legacy",
+                "transform-class-properties",
+                "transform-object-rest-spread"
+            ]
+        }
       }
     ]
   },

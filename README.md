@@ -1,3 +1,5 @@
+This is my fork of React-WHS that I can actually build.
+
 ![](http://i.imgur.com/MJmzMdb.png)
 
 # react-whs [![Build Status](https://img.shields.io/travis/WhitestormJS/react-whs.svg?style=flat-square)](https://travis-ci.org/WhitestormJS/react-whs) [![NPM Version](https://img.shields.io/npm/v/react-whs.svg?style=flat-square)](https://www.npmjs.com/package/react-whs)
